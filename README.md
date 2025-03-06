@@ -16,7 +16,7 @@ Pour ce projet, l’objectif était de créer un programme capable de trier une 
 - Le but est d’utiliser **le moins d’instructions possible**.
 
 #### Instructions disponibles :
-- **`push (a/b)`** : Déplace un élément vers la stack cible (ex. `push_a` déplace de B vers A).
+- **`push (a/b)`** : Déplace le premier élément vers le haut de la stack cible (ex. `push_a` déplace de B vers A).
 - **`rotate (a/b/r)`** : Déplace l’élément du haut de la stack vers le bas, tout en préservant l’ordre des autres éléments. Avec `r`, les deux stacks sont rotatées en une seule instruction.
 - **`reverse_rotate (a/b/r)`** : Déplace l’élément du bas de la stack vers le haut, en conservant l’ordre du reste. Avec `r`, les deux stacks sont affectées simultanément.
 - **`swap (a/b/s)`** : Échange les deux premiers éléments de la stack cible. Avec `s`, les deux stacks sont swappées en une seule instruction.
@@ -68,7 +68,7 @@ For this project, the goal was to create a program capable of sorting a provided
 - The objective is to use **the fewest instructions possible**.
 
 #### Available Instructions:
-- **`push (a/b)`**: Moves an element to the target stack (e.g., `push_a` moves from B to A).
+- **`push (a/b)`**: Moves the first element to the top of the target stack (e.g., `push_a` moves from B to A).
 - **`rotate (a/b/r)`**: Moves the top element of the stack to the bottom while preserving the order of the other elements. With `r`, both stacks are rotated in a single instruction.
 - **`reverse_rotate (a/b/r)`**: Moves the bottom element of the stack to the top while maintaining the order of the rest. With `r`, both stacks are affected simultaneously.
 - **`swap (a/b/s)`**: Swaps the first two elements of the target stack. With `s`, both stacks are swapped in a single instruction.
