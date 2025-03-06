@@ -33,8 +33,7 @@ Dans ce projet, je voulais approfondir ma maîtrise de deux concepts : les **poi
 
 2. **Recherche d’un algorithme adapté**  
    Après deux tentatives infructueuses pour concevoir mon propre algorithme, j’ai étudié les algorithmes existants. J’ai opté pour une approche qui cherche à chaque étape **le meilleur coup possible**, jusqu’à ce que :  
-   - La stack A soit triée, ou  
-   - Sa taille soit réduite à 3 éléments.  
+   - La stack A soit triée, ou sa taille soit réduite à 3 éléments.  
    L’objectif n’était pas d’avoir le programme le plus rapide, mais de générer la **séquence d’instructions la plus courte** pour trier les nombres.
 
 3. **Création d’une structure pour les instructions**  
@@ -84,8 +83,7 @@ In this project, I wanted to deepen my understanding of two concepts: **void * t
 
 2. **Finding a Suitable Algorithm**  
    After two unsuccessful attempts to design my own algorithm, I studied existing ones. I settled on an approach that, at each step, seeks **the best possible move** until:  
-   - Stack A is sorted, or  
-   - Its size is reduced to 3 elements.  
+   - Stack A is sorted or its size is reduced to 3 elements.  
    The goal wasn’t to create the fastest program but to generate the **shortest sequence of instructions** to sort the numbers.
 
 3. **Creating a Structure for Instructions**  
