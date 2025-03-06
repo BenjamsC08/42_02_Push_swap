@@ -17,9 +17,9 @@ Pour ce projet, l’objectif était de créer un programme capable de trier une 
 
 #### Instructions disponibles :
 - **`push (a/b)`** : Déplace le premier élément vers le haut de la stack cible (ex. `push_a` déplace de B vers A).
-- **`rotate (a/b/r)`** : Déplace l’élément du haut de la stack vers le bas, tout en préservant l’ordre des autres éléments. Avec `r`, les deux stacks sont rotatées en une seule instruction.
+- **`rotate (a/b/r)`** : Déplace l’élément du haut de la stack vers le bas, tout en préservant l’ordre des autres éléments. Avec `r`, les deux stacks sont affectées en une seule instruction.
 - **`reverse_rotate (a/b/r)`** : Déplace l’élément du bas de la stack vers le haut, en conservant l’ordre du reste. Avec `r`, les deux stacks sont affectées simultanément.
-- **`swap (a/b/s)`** : Échange les deux premiers éléments de la stack cible. Avec `s`, les deux stacks sont swappées en une seule instruction.
+- **`swap (a/b/s)`** : Échange les deux premiers éléments de la stack cible. Avec `s`, les deux stacks sont échangées en une seule instruction.
 
 
 ### Comment je m’y suis pris
