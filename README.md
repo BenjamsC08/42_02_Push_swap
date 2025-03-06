@@ -24,7 +24,7 @@ Pour ce projet, l’objectif était de créer un programme capable de trier une 
 
 ### Comment je m’y suis pris
 
-Dans ce projet, je voulais approfondir ma maîtrise de deux concepts : les **pointeurs de type `void *`** et les **pointeurs sur fonctions**. Pour cela, j’ai décidé d’utiliser les fonctions de listes chaînées de ma bibliothèque [libft]https://github.com/BenjamsC08/42_00_libft .
+Dans ce projet, je voulais approfondir ma maîtrise de deux concepts : les **pointeurs de type `void *`** et les **pointeurs sur fonctions**. Pour cela, j’ai décidé d’utiliser les fonctions de listes chaînées de ma bibliothèque [libft](https://github.com/BenjamsC08/42_00_libft).
 
 #### Étapes suivies :
 
@@ -75,7 +75,7 @@ For this project, the goal was to create a program capable of sorting a provided
 
 ### How I Approached It
 
-In this project, I wanted to deepen my understanding of two concepts: **void * type pointers** and **function pointers**. To achieve this, I decided to use the linked list functions from my [libft]https://github.com/BenjamsC08/42_00_libft .
+In this project, I wanted to deepen my understanding of two concepts: **void * type pointers** and **function pointers**. To achieve this, I decided to use the linked list functions from my [libft](https://github.com/BenjamsC08/42_00_libft).
 
 #### Steps Followed:
 
