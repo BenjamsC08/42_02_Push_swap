@@ -1,4 +1,4 @@
-<h1 align="center">Libft</h1>
+<h1 align="center">Push Swap</h1>
 
 <p align="center">
   <a href="#explication-fr">🇫🇷</a> | <a href="#explanation-en">🇬🇧</a>
