@@ -64,12 +64,10 @@ int	get_index_min_value(t_list **stack)
 {
 	t_list	*curr;
 	t_data	*data;
-	int		index;
 	int		min;
 
 	curr = *stack;
 	data = get_data(curr);
-	index = data->index;
 	min = get_min_value(stack);
 	while (curr->next)
 	{

@@ -51,7 +51,7 @@ char	**get_instruct(void)
 			sstr = ft_strdup(str);
 		else
 			sstr = ft_strfjoin(sstr, str);
-		if (ft_strlen(str) == 1 && str[0] == '\n')
+		if (ft_strlen(str) == 1)
 		{
 			free(str);
 			break ;
@@ -96,8 +96,12 @@ int	checker(t_list **head)
 	t_list	*stack_a;
 	t_list	*stack_b;
 	char	**instruct;
+	int		nb_instruct;
 
 	instruct = get_instruct();
+	if (!check_instruct(instruct))
+		return (free_list(*head), free_strs(instruct), 1);
+	nb_instruct = ft_strslen(instruct);
 	stack_a = *head;
 	stack_b = NULL;
 	do_instruct(&stack_a, &stack_b, instruct);
@@ -106,12 +110,12 @@ int	checker(t_list **head)
 		free_list(stack_b);
 	if (is_sorted(&stack_a))
 	{
-		ft_printf("%sOK\n", GREEN);
+		ft_printf("%sOK%s (in %d instructs)\n", GREEN, RESET, nb_instruct);
 		return (free_list(*head), 0);
 	}
 	else
 	{
-		ft_printf("%sKO\n", RED);
+		ft_printf("%sKO%s\n", RED, RESET);
 		return (free_list(*head), 1);
 	}
 }

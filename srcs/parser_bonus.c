@@ -25,7 +25,7 @@ static int	only_digit(char **strs)
 		{
 			if (j == 0 && (strs[i][j] == '-' || strs[i][j] == '+'))
 			{
-				if (ft_strlen(strs[i]) <= 1)
+				if (ft_strlen(strs[i]) <= 1 || strs[i][j] == ' ')
 					return (0);
 				j++;
 			}
@@ -102,7 +102,9 @@ char	**parse_arg(char **strs)
 	if (err)
 	{
 		free_strs(strs);
-		return (ft_putstr_fd("error : %d\n", 2), NULL);
+		ft_putstr_fd(RED, 2);
+		ft_putstr_fd("Error\n", 2);
+		return (NULL);
 	}
 	return (strs);
 }

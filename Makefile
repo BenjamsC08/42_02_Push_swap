@@ -11,11 +11,11 @@
 # **************************************************************************** #
 
 CC = cc
-FLAGS = -Wall -Wextra -Werror -g3
+FLAGS = -Wall -Wextra -Werror -O3
 NAME = push_swap
-NAME_BONUS = my_checker
+NAME_BONUS = checker
 SRCS = srcs/count_moove.c srcs/list_manipulation.c srcs/list_utils.c srcs/other.c srcs/push_swap.c srcs/push_swap_init.c srcs/push_swap_op.c srcs/push_swap_op_ult.c srcs/push_swap_parsing.c srcs/struct_help.c srcs/sort_utils.c srcs/sort_list.c srcs/getter_utils.c
-SRCS_BONUS = srcs/op_bonus.c srcs/op_ult_bonus.c srcs/struct_help_bonus.c srcs/list_manipulation_bonus.c srcs/checker_bonus.c srcs/list_utils_bonus.c srcs/init_bonus.c srcs/parser_bonus.c
+SRCS_BONUS = srcs/op_bonus.c srcs/op_ult_bonus.c srcs/struct_help_bonus.c srcs/list_manipulation_bonus.c srcs/checker_bonus.c srcs/list_utils_bonus.c srcs/init_bonus.c srcs/parser_bonus.c srcs/other_bonus.c
 OBJ = $(SRCS:.c=.o)
 OBJ_BONUS = $(SRCS_BONUS:.c=.o)
 LIB_PATH = -Llibft
@@ -29,7 +29,7 @@ bonus: LIBFT $(NAME_BONUS)
 LIBFT:
 	@cd libft >> /dev/null && make >> /dev/null && cd .. >> /dev/null
 %.o: %.c
-	@$(CC) $(FLAGS) $(INCLUDE_PATH) -O3 -c $< -o $@
+	@$(CC) $(FLAGS) $(INCLUDE_PATH) -c $< -o $@
 $(NAME): $(OBJ)
 	$(CC) $(FLAGS) $(OBJ) $(LIB_PATH) $(LIB_NAME) $(INCLUDE_PATH) -o $(NAME)
 $(NAME_BONUS): $(OBJ_BONUS)
@@ -39,7 +39,7 @@ clean:
 clean_bonus:
 	rm -rf **/*_bonus.o
 fclean: clean clean_bonus
-	rm -rf $(NAME) libft/libft.a $(NAME_BONUS) checker_linux
+	rm -rf $(NAME) libft/libft.a $(NAME_BONUS) checker_linux 
 re : fclean all
 
 listC:

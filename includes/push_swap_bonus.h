@@ -81,5 +81,7 @@ int				get_max_value(t_list **stack);
 int				get_min_value(t_list **stack);
 int				get_index_max(t_list **stack);
 int				get_index_min_value(t_list **stack);
+//checker
+int				check_instruct(char **instruct);
 
 #endif

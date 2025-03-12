@@ -104,7 +104,8 @@ void	turk_sort(t_list **stack_a, t_list **stack_b)
 
 	moves = NULL;
 	push_to(stack_a, stack_b, 'b');
-	push_to(stack_a, stack_b, 'b');
+	if (ft_lstsize(*stack_a) > 3)
+		push_to(stack_a, stack_b, 'b');
 	while (ft_lstsize(*stack_a) > 3 && !is_sort(stack_a))
 	{
 		moves = find_better_move(stack_a, stack_b, 'b');
